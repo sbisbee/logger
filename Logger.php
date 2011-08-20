@@ -12,6 +12,10 @@ class Logger {
     self::$logFile = $f;
   }
 
+  public static function error($msg) {
+    self::addEntry('ERROR', $msg);
+  }
+
   public static function warn($msg) {
     self::addEntry('LOG', $msg);
   }
